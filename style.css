@@ -259,14 +259,13 @@ input {
 }
 
 /* MAIN */
-main {
-    height: 5000px;
-}
 
+/* SLIDE */
 .slide {
     margin-bottom: 60px;
 }
 
+/* Banner */
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -291,6 +290,16 @@ main {
     margin: 0 10px 20px 10px;
 }
 
+.item h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item .item_info {
+    margin-left: 10px;
+}
+
+/* Cloud */
 .cloudtea {
     background-image: url(img/bgcloud.webp);
     background-size: cover;
@@ -315,12 +324,160 @@ main {
     margin-left: 500px;
 }
 
-/* FOOTER */
-footer {
-    background-color: black;
-    height: 100px;
+/* Store */
+.store {
+    height: 1000px;
+    background-color: white;
 }
 
+/* Blogs */
+.blog {
+    background-color: #FFF7E6;
+    padding: 0 170px;
+    padding-bottom: 100px;
+}
+
+.tittle_blog {
+    padding-top: 30px;
+    margin-left: 460px;
+}
+
+.tittle_blog span {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'SF Pro Display', sans-serif;
+
+}
+
+.tittle_blog img {
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.hearder_content {
+    border-left: 4px solid #E57905;
+    padding-left: 10px;
+}
+
+.hearder_content p {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.blog_list {
+    width: 370px;
+    height: 430px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.content_img img {
+    width: 370px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.content_time {
+    padding: 10px 0;
+    color: gray;
+    font-weight: 100;
+}
+
+.content_tittle a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content_tittle {
+    padding-bottom: 5px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #262626;
+    height: 425px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+footer .container-fluid {
+    padding: 40px 200px 20px 200px;
+}
+
+footer .list {
+    display: flex;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+footer .ct a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+footer .ct p {
+    margin-bottom: 20px;
+}
+
+.ct img {
+    margin-right: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    width: 650px;
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    height: 3px;
+    background-color: white;
+    border: none;
+}
+
+.fp img {
+    width: 260px;
+    height: 130px;
+}
+
+#avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    position: relative;
+    top: -120px;
+    left: 10px;
+}
+
+.fp a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.tt {
+    position: relative;
+    top: -120px;
+}
 
 /* CONTACT */
 .contact {
