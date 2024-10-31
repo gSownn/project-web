@@ -25,25 +25,25 @@
 }
 
 /* NAV */
+
 .container_nav {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
     vertical-align: baseline;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+
 }
 
 .header_nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header_logo {
-    width: 200px;
-    height: 25px;
+    width: 255px;
+    height: 60px;
 }
 
 .logo_wrap a {
@@ -51,18 +51,12 @@
 }
 
 .logo_wrap .logo img {
-    height: 25px;
+    height: 60px;
     fill: white;
     padding-top: 5px;
-    width: 200px;
+    width: 255px;
+    padding-right: 50px;
     box-sizing: border-box;
-    position: relative;
-    top: 15px;
-    left: 150px;
-}
-
-.nav_pc {
-    margin-left: 250px;
 }
 
 .nav_pc>ul>li a {
@@ -179,7 +173,7 @@ input {
         position: absolute;
         width: 255px;
         height: 60px;
-        margin-top: -30px;
+        margin-top: 10px;
         margin-left: -127.5px;
     }
 }
@@ -203,7 +197,7 @@ input {
 .tab_content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.35s;
+    transition: all 0.5s;
 }
 
 .tab_input:checked~.tab_content {
@@ -265,11 +259,11 @@ input {
     margin-bottom: 60px;
 }
 
-/* Banner */
+/* Home */
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
+    margin-bottom: 100px;
 }
 
 .banner {
@@ -281,6 +275,8 @@ input {
     height: 360px;
     border-radius: 20px;
     margin: 0 20px 40px 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .item img {
@@ -288,11 +284,18 @@ input {
     height: 270px;
     border-radius: 15px;
     margin: 0 10px 20px 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .item h3 {
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.item h3:hover {
+    color: #E57905;
 }
 
 .item .item_info {
@@ -310,24 +313,110 @@ input {
 }
 
 .info_cloud img {
-    margin-left: 500px;
+    margin-left: 690px;
 
 }
 
 .info_cloud p {
-    width: 500px;
-    margin: 30px 0 30px 500px;
+    width: 600px;
+    margin: 40px 0 30px 600px;
     text-align: justify;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .info_cloud button {
-    margin-left: 500px;
+    margin-left: 600px;
 }
 
-/* Store */
-.store {
-    height: 1000px;
-    background-color: white;
+/* Store 1 */
+.store1 {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bao1 {
+    background-image: url(img/sig-03.png);
+    margin-top: 100px;
+    width: 60%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.new_store1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.store_content1 {
+    background: rgba(255, 241, 208, 0.9);
+    width: 40%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    transition: 0.5s;
+}
+
+.new_store1:hover .store_content1 {
+    transform: translate(548px);
+}
+
+/* Store 2*/
+.store2 {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bao2 {
+    background-image: url(img/store.png);
+    width: 60%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.new_store2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.store_content2 {
+    background: rgba(255, 241, 208, 0.9);
+    width: 40%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    transition: 0.5s;
+    transform: translate(548px);
+}
+
+.new_store2:hover .store_content2 {
+    transform: translate(0px);
 }
 
 /* Blogs */
@@ -340,6 +429,7 @@ input {
 .tittle_blog {
     padding-top: 30px;
     margin-left: 460px;
+    margin-bottom: 40px;
 }
 
 .tittle_blog span {
@@ -355,11 +445,13 @@ input {
     position: relative;
     top: -10px;
     left: -10px;
+    cursor: pointer;
 }
 
 .hearder_content {
     border-left: 4px solid #E57905;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .hearder_content p {
@@ -368,17 +460,34 @@ input {
     margin: 25px 0;
 }
 
+.hearder_content p:hover {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 25px 0;
+    color: #E57905
+}
+
 .blog_list {
     width: 370px;
-    height: 430px;
+    height: 400px;
     display: inline-block;
     margin-right: 20px;
 }
 
+.content_img {
+    overflow: hidden;
+}
+
 .content_img img {
     width: 370px;
-    height: 220px;
+    height: 200px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.content_img:hover img {
+    transform: scale(1.1);
 }
 
 .content_time {
@@ -394,6 +503,10 @@ input {
     font-weight: bold;
 }
 
+.content_tittle a:hover {
+    color: #E57905;
+}
+
 .content_tittle {
     padding-bottom: 5px;
 }
@@ -401,7 +514,7 @@ input {
 /* FOOTER */
 footer {
     background-color: #262626;
-    height: 425px;
+    height: 430px;
     margin: 0;
     padding: 0;
     color: white;
@@ -419,10 +532,15 @@ footer h4 {
     font-size: 20px;
 }
 
-ul li a {
+footer ul li a {
     color: white;
     text-decoration: none;
     font-size: 13px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 footer .ct a {
@@ -463,9 +581,23 @@ hr {
     height: 50px;
     border-radius: 50%;
     border: 3px solid blue;
+    transform: translate(10px, -120px);
+}
+
+.fb i {
+    font-size: 25px;
     position: relative;
-    top: -120px;
+    top: 1px;
     left: 10px;
+    cursor: pointer;
+    color: blue;
+}
+
+
+
+.fb {
+    transform: translate(10px, -95px);
+    cursor: pointer;
 }
 
 .fp a {
