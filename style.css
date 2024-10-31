@@ -422,13 +422,20 @@ input {
 /* Blogs */
 .blog {
     background-color: #FFF7E6;
-    padding: 0 170px;
     padding-bottom: 100px;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .tittle_blog {
     padding-top: 30px;
-    margin-left: 460px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     margin-bottom: 40px;
 }
 

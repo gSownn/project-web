@@ -1,4 +1,4 @@
-var myCarousel = document.querySelector('#carouselExampleIndicators');
-var carousel = new bootstrap.Carousel(myCarousel, {
-    wrap: true
+// Bắt sự kiện nhấp chuột vào liên kết
+document.getElementById("hotlineLink").addEventListener("click", function () {
+    alert("1800");
 });
