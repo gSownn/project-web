@@ -1,1 +1,1 @@
-(http://webdongian.free.nf/index.html)
+http://webdongian.free.nf/index.html
